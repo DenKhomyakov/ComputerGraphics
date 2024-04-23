@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1713846127 source:d:\programming tools\visual studio 2022\1. tomsk state university\semester 6\computergraphics\fillcube\fillcube.cpp
+	<iostream>
+	<cmath>
+	<graphics.h>
+	<conio.h>
+	<stdio.h>
+	<windows.h>
+
+1266072614 c:\program files (x86)\codeblocks-ep\sdk\winbgim\include\graphics.h
+	<windows.h>
+	<limits.h>
+	<sstream>
+
