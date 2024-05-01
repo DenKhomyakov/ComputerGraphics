@@ -226,11 +226,6 @@ int main()
 			}
 		}
 
-		char infoString[100];
-
-		//sprintf(infoString, "x0=%.3lf  y0=%.3lf  z0=%.3lf", initialX, initialY, initialZ);
-
-		//outtextxy(0, 0, infoString);
 		setvisualpage(activePage);
 
 		if (!kbhit())
