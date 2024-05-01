@@ -185,10 +185,6 @@ int main()
 		cleardevice();
 
 		DrawCube(transformedCubeVertices);
-		char textBuffer[100];
-		sprintf(textBuffer, "initialX = %.3lf  initialY = %.3lf  initialZ = %.3lf", initialX, initialY, initialZ);
-
-		outtextxy(0, 0, textBuffer);
 		setvisualpage(activePage);
 
 		if (!kbhit())
