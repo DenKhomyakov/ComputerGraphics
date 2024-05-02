@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1714570488 source:d:\programming tools\visual studio 2022\1. tomsk state university\semester 6\computergraphics\cube\cube.cpp
+1714627540 source:d:\programming tools\visual studio 2022\1. tomsk state university\semester 6\computergraphics\cube\cube.cpp
 	<iostream>
 	<cmath>
 	<graphics.h>
