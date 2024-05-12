@@ -131,8 +131,8 @@ void DrawCube(double vertexCoordinates[][4], int* cubeFaces, int cubeColor)
 		newCubeVertices[i * 2 + 1] = screenCenterY - (int)(vertexCoordinates[cubeFaces[i]][1] * scaleCoefficient);
 	}
 
-	fillpoly(5,newCubeVertices);
-	//drawpoly(5, newCubeVertices);
+	//fillpoly(5,newCubeVertices);
+	drawpoly(5, newCubeVertices);
 }
 
 void CalculateABCD(double vertexCoordinates[][4], int* faceIndices, double* ABCD)
