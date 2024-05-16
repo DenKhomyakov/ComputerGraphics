@@ -76,7 +76,7 @@ void Observer::paintEvent(QPaintEvent *event) {
 void Observer::newCoordObserver() {
     // Проверяем, что поля не пустые, иначе - выводим сообщение об ошибке
     if (inputX->text().isEmpty() || inputY->text().isEmpty() || inputZ->text().isEmpty()) {
-        QMessageBox message(QMessageBox::Information, "Prism", "The entered string is empty!", QMessageBox::Ok);
+        QMessageBox message(QMessageBox::Information, " ", "The entered string is empty!", QMessageBox::Ok);
         message.exec();
         return;
     }
