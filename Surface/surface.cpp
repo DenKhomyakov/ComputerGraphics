@@ -6,7 +6,8 @@ Surface::Surface() {}
 
 // Метод возвращает значение функции для заданных значений x и z
 qreal Surface::f(qreal x, qreal z) const {
-    return qExp(-qSqrt(x * x + z * z)) - 0.5;
+    //return qExp(-qSqrt(x * x + z * z)) - 0.5;
+    return z * z * z + x * z;
 }
 
 // Метод возвращает вектор сечений поверхности

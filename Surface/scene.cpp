@@ -222,9 +222,9 @@ void Scene::drawFor(const QVector3D& coordObserver, QPainter &painter, qint32 wi
         pointY = height + 1;
     }
 
-    // Создаём два объекта с цветами красный и зелёный, которые будут использоваться для рисования точек сечений
-    QPen red(Qt::red, 1);
-    QPen green(Qt::green, 1);
+    // Создаём два объекта с цветами синий и белый, которые будут использоваться для рисования точек сечений
+    QPen red(Qt::blue, 1);
+    QPen green(Qt::white, 1);
 
     // Перебираем все сечения в цикле и рисуем точки каждого сечения
     for (qint32 i {0}; i < sectionsInCSP.length(); i++) {
@@ -235,7 +235,7 @@ void Scene::drawFor(const QVector3D& coordObserver, QPainter &painter, qint32 wi
                 horizonDown[j] = sectionsInCSP[i][j].y();
 
                 if (i != 0) {
-                    painter.setPen(red);
+                    painter.setPen(Qt::blue);
                 }
 
                 painter.drawPoint(sectionsInCSP[i][j].toPointF());
@@ -246,7 +246,7 @@ void Scene::drawFor(const QVector3D& coordObserver, QPainter &painter, qint32 wi
                 horizonUp[j] = sectionsInCSP[i][j].y();
 
                 if (i != 0) {
-                    painter.setPen(green);
+                    painter.setPen(Qt::white);
                 }
 
                 painter.drawPoint(sectionsInCSP[i][j].toPointF());
